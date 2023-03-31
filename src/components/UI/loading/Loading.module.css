@@ -1,0 +1,37 @@
+.myLoading{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+.text{
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: 800;
+    animation: size 1s infinite alternate linear;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: rotate 1s infinite alternate linear;
+}
+@keyframes size{
+    from{
+        transform: scale(1.1);
+    }to{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg) scale(0.9);
+        border: 15px dashed rgb(21, 255, 0);
+    }to{
+        transform: rotate(250deg) scale(0.8);
+        border: 15px dashed rgb(248, 0, 0);
+    }
+}
