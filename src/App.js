@@ -18,7 +18,7 @@ function App() {
             isAuth,
             setIsAuth
         }}>
-            <HashRouter>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <Navbar />
                 <AppRouter />  
             </HashRouter>
